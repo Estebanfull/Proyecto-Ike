@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.encabezado {
+  
+  background-color: #797979;
+  color: white;
+  padding: 10px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor img {
+  width: 50px;
+  height: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.boton-menu,
+.boton-volver {
+  background-color: #004B83;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.menu {
+  background-color: #00000000;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 2vw;
+  padding: 10px;
+  margin-top: 100px;
+}
+
+.menu ul li {
+  margin-bottom: 10px;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px;
+  color: #004B83;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  background-color: #004a8374;
+}
+
+.menu ul li img.icono-naranja {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.menu ul li span.texto-azul {
+  color: #F2A83E;
+}
+
+.contenedor-central {
+  text-align: center;
+  background-image: url('imagenes/fondo-textura.avif');
+  background-size: cover; /* Ajusta la imagen de fondo para cubrir completamente el contenedor */
+  background-color: #8585853f;
+  margin: 0;
+  padding: 0;
+  filter: brightness(110%); /* Ajusta el brillo al 110% de la imagen de fondo */
+}
+
+.contenedor-central h2 {
+  font-size: 2vw; /* Tamaño relativo al ancho de la pantalla */
+  margin: 2vh 0; /* Margen relativo al alto de la pantalla */
+  padding: 1vh;
+}
+
+.contenedor-central .imagen-texto {
+  margin-bottom: 6vh; /* Espacio entre la imagen y el texto */
+}
+
+.contenedor-central .imagen-texto img {
+  max-width: 100%; /* Hace que la imagen sea responsive */
+  height: auto; /* Ajusta automáticamente la altura según el ancho */
+}
+
+.contenedor-central p {
+  margin: 1vh auto; /* Margen relativo al alto de la pantalla */
+  max-width: 60vw; /* Ancho máximo relativo al ancho de la pantalla */
+  font-size: 1vw; /* Tamaño relativo al ancho de la pantalla */
+}
+
+
+.img_menu {
+  margin-top: 4vh;
+  width: 30%;
+  height: auto;
+}
+
+.pie-pagina {
+  background-color: #797979;
+  color: white;
+  text-align: center;
+  padding: 2vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2vh; /* Altura relativa al alto de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina img {
+  height: 100%; /* Altura relativa al alto del contenedor */
+  margin-right: 1vw; /* Margen relativo al ancho de la pantalla */
+  margin-left: 1vw;
+}
+
+/* Media queries para ajustar estilos en diferentes tamaños de pantalla */
+@media screen and (max-width: 768px) {
+  .contenedor-central h2 {
+    font-size: 6vw;
+  }
+  .contenedor-central p {
+    max-width: 90vw;
+  }
+}
+
+
+
